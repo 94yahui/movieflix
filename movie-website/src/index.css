@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: black;
+  padding: 1rem;
+}
+
+main {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.search {
+  width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon::after {
+  position: relative;
+  right: 30px;
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 230px;
+  background-color: rgb(94, 102, 225);
+  padding: .5rem;
+
+  img {
+    border-radius: 15px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem
+}
+
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    width: 18px;
+    height: 18px;
+    border-radius: 0;
+  }
+}
+
+.ratting {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: .1rem;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(3rem,10vw, 6rem);
+  /* overflow: hidden; */
+
+  img {
+    /* width: 200px; */
+    border-radius: 10px;
+    z-index: 10;
+    border: 1px solid rgb(94, 102, 225);
+  }
+
+  .trendingMovie {
+    /* position: relative; */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+
+    p {
+      position: relative;
+      font-size: clamp(50px, 20vw, 200px);
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: transparent;
+      /* -webkit-text-stroke: 2px rgb(184, 184, 184); */
+      -webkit-text-stroke: 2px rgb(255, 255, 255);
+      left: 20px;
+      z-index: 9;
+
+    }
+  }
+}
+
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 40px;
+  background-color: #151515;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: #f3f3f3;
+  text-align: center;
+  font-size: 48px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #4b5362;
+  padding: 20px;
+  margin: 10px;
+  background-color: #31363f;
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+button {
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+} */
