@@ -9,3 +9,5 @@ Built with React, Vite, it delivers fast performance and a clean, modern UI.
 ⚡ Fast Build & HMR: Vite provides lightning-fast development and optimized production builds.
 
 Tech: React, Vite, Tailwind CSS, API(TMDB)
+
+![MovieFlix Screenshot](./screenshot.png)
